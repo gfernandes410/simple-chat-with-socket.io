@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Simple Chat with socket.io</title>
+
+        <script defer src="http://localhost:8900/socket.io/socket.io.js"></script>
+        <script defer src="script.js"></script>
+
+        <style>
+            body {background-color:lightblue}
+            
+            .all {
+                width: 50%;
+                margin: 0 auto;
+                background-color: darkgrey;
+            }
+
+            .message-container {
+                padding: 20px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="all">
+
+            <div id="message-container"></div>
+
+            <form id="send-container">
+                <input type="text" id="massage-input">
+                <button type="submit" id="send-button">Send</button>
+            </form>
+
+        </div>
+
+    </body>
+</html>
